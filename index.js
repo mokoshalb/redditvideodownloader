@@ -22,7 +22,7 @@ app.get('/:id', function(req, res){
 	let mediaId = req.params.id;
 	console.log('Hold on, Fetching the Best Quality');
 	_res.forEach(res => {
-    fetch(`https://v.redd.it/${mediaId}/DASH_${res}`)
+    fetch(`https://v.redd.it/${mediaId}/DASH_${res}.mp4`)
       .then(response => {
         if(response.status === 200 && !oneDownload) {
           oneDownload = true;
