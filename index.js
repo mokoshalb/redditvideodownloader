@@ -4,7 +4,7 @@ const app = express()
 const fs = require('fs');
 const request = require('request');
 const ffmpeg = require("fluent-ffmpeg");
-const proc = new ffmpeg();;
+const proc = new ffmpeg();
 const fetch = require("node-fetch");
 const _res = [1080, 720, 480, 360, 240, 140, 120, '2_4_M', '1_2_M'];
 
